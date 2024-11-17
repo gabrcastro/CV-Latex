@@ -1,0 +1,154 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.5in,nofoot]{geometry}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*1}{*1}
+
+\newcommand{\entry}[4]{
+  \noindent\textbf{#1} \hfill #2 \\
+  \noindent\textit{#3} \hfill \textit{#4} \\
+  \vspace{2pt}
+}
+
+\newcommand{\project}[2]{
+  \noindent\textbf{#1} \hfill #2 \\
+  \vspace{2pt}
+}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{\Large GABRIEL SOUZA CASTRO}
+
+\vspace{0.4em}
+
+% \noindent \faMapMarker ~ City, Country ~ \faUser ~ AGE years old \\
+% \faIdCard ~ Citizenship
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\raggedleft
+{\color{blue}} \href{https://example.com}{\faPhone \space +55 74 98859 1670} \quad
+{\color{blue}} \href{mailto:gabrielcastromail@gmail.com}{\faEnvelope \space gabrielcastromail@gmail.com}
+
+\vspace{0.2em}
+
+{\color{blue}} \href{https://gabrcastro.vercel.app}{\faGlobe \space Website} \quad
+{\color{blue}} \href{https://github.com/gabrcastro}{\faGithub \space GitHub} \quad
+{\color{blue}} \href{https://linkedin.com/in/gabrielsouzacastro}{\faLinkedin \space LinkedIn} \\
+\end{minipage}
+
+\vspace{0.5em}
+
+%LANGUAGES%
+\section*{Habilidades}
+\vspace{0.6em}
+\item \textbf{Front End:} Nextjs, React, Typescript/Javascript, Angular, HTML, CSS/SCSS, Tailwind CSS, TanStack Query, Zod, Redux, Zustand.
+\item \textbf{Tecnologias:} Firebase, Git, RESTful APIs, GitHub, Azure, CI/CD.
+\item \textbf{Banco de Dados:} SQL Server, PostgreSQL, SQLite, MongoDB.
+\item \textbf{Back End:} Node.js, Nest.js, C#, .NET.
+\item \textbf{Competências:} Comunicação, Flexibilidade e Proatividade.
+\item \textbf{Idiomas:} \textbf{Intermediário}: Inglês | \textbf{Básico}: Espanhol
+
+\vspace{1em}
+
+% Experiences %
+\section*{Experience}
+\vspace{0.6em}
+
+% Experience 1 %
+\entry{Houseasy}{ \space 12/2022 -- 05/2024}
+{Front End Developer Pleno}{Remoto}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+
+\item Desenvolvi aplicações web para gerenciamento interno da empresa com React e Next.js, contribuindo para um aumento significativo nas vendas.
+\item Colaborei na criação de componentes reutilizáveis para o site da empresa, aplicando Tailwind CSS para agilizar o desenvolvimento e garantir consistência visual.
+\item Integrei APIs usando TanStack Query, o que simplificou o código e facilitou a adaptação de novos desenvolvedores ao projeto.
+\item Otimizei o desempenho do website, reduzindo o tempo de carregamento de páginas e imagens em 50\%, o que melhorou a experiência do usuário e os resultados de SEO.
+\item Implementei design responsivo nas aplicações, tornando-as mais acessíveis para usuários móveis e contribuindo para o aumento do engajamento.
+\item Gerenciei estados complexos das aplicações com Redux e Context API, proporcionando uma experiência de usuário mais fluida e confiável.
+
+\end{itemize}
+
+% Experience 2 %
+\entry{Profile Tecnologia}{ \space 09/2021 -- 09/2022}
+{Front End Developer}{Remoto}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+
+\item Desenvolvi uma aplicação web para empresas, integrando APIs de chatbot com Angular e TypeScript para aprimorar o atendimento ao cliente.
+
+\item Refatorei aplicações legadas, aplicando boas práticas de código e atualizando bibliotecas, o que melhorou a eficiência e a organização do código.
+
+\item Implementei funcionalidades de mensagens em tempo real, integrando o frontend com o backend para aprimorar a experiência do usuário.
+
+\item Colaborei na manutenção de aplicativos móveis usando Flutter, expandindo o escopo de atendimento e suporte ao cliente.
+
+\end{itemize}
+
+% Experience 3 %
+\entry{Quarta Casa}{ \space 08/2021 -- 09/2021}
+{Web Developer - Estagiário}{Remoto}
+\vspace{-1.6em}
+\begin{itemize}
+\setlength\itemsep{-0.3em}
+
+\item Desenvolvi dashboards e aplicações web com React.js e TypeScript, contribuindo para análises visuais e tomadas de decisão.
+
+\item Participei da implementação de RabbitMQ no backend com Node.js, aprimorando a comunicação assíncrona entre serviços.
+
+\item Realizei pesquisas e documentações para o desenvolvimento de dashboards, assegurando a continuidade e a clareza dos processos para futuras implementações.
+
+\end{itemize}
+
+
+
+\vspace{1em}
+% Projects %
+% \section*{Projects}
+% \vspace{0.6em}
+% \project{Project A | \normalfont{\textit{Technologies}}}{\textbf{Month Year}}
+% \vspace{-1.6em}
+% \begin{itemize}
+% \setlength\itemsep{-0.3em}
+% \item Description of project 1.
+% \item Description of project 2.
+% \item Description of project 3.
+% \end{itemize}
+
+% % Educations %
+\section*{Education}
+\vspace{0.6em}
+\entry{UNINTER}{2024 -- cursando}{Bacharelado em Engenharia da Computação}
+
+\vspace{0.5em}
+
+\entry{Faculdade Descomplica}{2022 -- 2023}{Pós-Graduação em Análise 
+de Dados}
+
+\vspace{0.5em}
+
+\entry{SENAC}{2021 -- 2022}{Pós-Graduação em Tecnologias e Inovações Web}
+
+\vspace{0.5em}
+
+\entry{Faculdade São Salvador}{2017 -- 2020}{Graduação de Tecnologia em Análise e Desenvolvimento de Sistemas}
+
+\end{document}
